@@ -34,7 +34,7 @@
   {% set hasSearch = theme.swiftype_key || theme.algolia_search.enable || theme.tinysou_Key || config.search %}
 
   {% if theme.menu %}
-    <ul id="menu" class="menu">
+    <ul id="menu" class="menu menu-left">
       {% for name, path in theme.menu %}
         {% set itemName = name.toLowerCase() %}
         <li class="menu-item menu-item-{{ itemName }}">
