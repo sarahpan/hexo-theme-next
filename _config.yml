@@ -153,7 +153,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /images/avatar.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -400,6 +400,12 @@ algolia_search:
     hits_empty: "We didn't find any results for the search: ${query}"
     hits_stats: "${hits} results found in ${time} ms"
 
+# Local search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 
 
 #! ---------------------------------------------------------------
